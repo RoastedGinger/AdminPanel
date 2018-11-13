@@ -76,7 +76,7 @@ public class Tech extends AppCompatActivity {
                                 JSONObject heroObject = heroArray.getJSONObject(i);
 
                                 //creating a hero object and giving them the values from json object
-                                AssignTechs assignTechs = new AssignTechs(heroObject.getString("Name"), heroObject.getString("Status"),heroObject.getString("Complain_ID"),heroObject.getString("Tech_id "));
+                                AssignTechs assignTechs = new AssignTechs(heroObject.getString("Name"), heroObject.getString("Status"),heroObject.getString("Complain_ID"),heroObject.getString("Tech_id"));
 
                                 //adding the hero to herolist
                                 techsList.add(assignTechs);

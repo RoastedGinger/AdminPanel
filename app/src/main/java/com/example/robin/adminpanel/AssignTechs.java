@@ -10,7 +10,7 @@ public class AssignTechs {
         this.Tname = Tname;
         this.status= status;
         this.cid = cid;
-        this.tid = tid;
+       this.tid = tid;
     }
 
     public String getCid() {
@@ -37,7 +37,7 @@ public class AssignTechs {
         Tname = tname;
     }
 
-    public String getTid() {
+  public String getTid() {
         return tid;
     }
 

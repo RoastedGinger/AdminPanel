@@ -26,7 +26,7 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
 
     private Context mCtx;
     private List<AssignTechs> complaintList;
-    String Server_url = "";
+    String Server_url = "https://beholden-effects.000webhostapp.com/DomPowCom/update_tech.php";
 
     public TechAdapter(Context mCtx, List<AssignTechs> techsList) {
         this.mCtx = mCtx;
@@ -60,17 +60,11 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
                             @Override
                             public void onResponse(String response) {
                                 String res=response.toString().trim();
-                                if(!res.equals("0"))
-                                {
-                                    Toast.makeText(view.getContext(),"successfully logged in admin",Toast.LENGTH_LONG).show();
+                                    Toast.makeText(view.getContext(),res,Toast.LENGTH_LONG).show();
 
-//
-                                }
-                                else
-                                {
                                     //  avi.hide();
-                                    Toast.makeText(view.getContext(), "invalid user name or password",Toast.LENGTH_LONG).show();
-                                }
+                                    //Toast.makeText(view.getContext(), "invalid user name or password",Toast.LENGTH_LONG).show();
+
                             }
                         }, new Response.ErrorListener() {
                     @Override
