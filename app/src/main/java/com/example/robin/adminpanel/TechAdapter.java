@@ -83,6 +83,7 @@ public class TechAdapter extends RecyclerView.Adapter<TechAdapter.TechsViewHolde
                     }
                 };
                 MySingleton.getInstance(view.getContext()).addToRequestQue(request);
+                //hello world
             }
         });
     }
